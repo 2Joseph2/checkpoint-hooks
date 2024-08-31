@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 234, 197);
+  color: rgb(96, 63, 38);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(108, 78, 49);
+  padding: 10px 20px;
+  color: white;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header h1 span {
+  color: rgb(255, 219, 181);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+header nav ul li:hover {
+  color: rgb(255, 219, 181);
+}
+
+/* Home Page Styles */
+.home .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Makes the content responsive */
+}
+
+.home .img {
+  max-width: 10%; /* Limit the width to make the layout more balanced */
+  margin: 0 auto; /* Centers the image container */
+}
+
+.home .img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home .desc {
+  max-width: 400px;
+  text-align: left;
+  padding: 10px;
+}
+
+.home .desc h2 {
+  font-size: 2rem;
+  color: rgb(108, 78, 49);
+}
+
+.home .desc p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgb(96, 63, 38);
+}
+
+.home .desc button {
+  padding: 10px 20px;
+  background-color: rgb(255, 219, 181);
+  color: rgb(96, 63, 38);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.home .desc button:hover {
+  background-color: rgb(108, 78, 49);
+  color: white;
+}
+
+/* MovieList and MovieCard Styles */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgb(255, 219, 181);
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: rgb(108, 78, 49);
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: rgb(96, 63, 38);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
